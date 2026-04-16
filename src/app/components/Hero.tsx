@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import arold from '../../assets/arold.jpeg';
 
 export function Hero() {
   return (
@@ -18,9 +19,13 @@ export function Hero() {
           transition={{ duration: 0.6 }}
         >
           <div className="mb-6 inline-block">
-            <div className="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-[#38BDF8] to-[#0EA5E9] flex items-center justify-center text-[#0F172A] text-4xl shadow-xl shadow-[#38BDF8]/50 font-bold">
-              AT
-            </div>
+           <img
+              src={arold}
+              alt="Arold Awoubeng Tsatio"
+              className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover object-[50%_25%] border-4 border-[#38BDF8] shadow-[0_0_40px_#38BDF8]"
+
+            />
+
           </div>
           
           <h1 className="text-5xl md:text-7xl mb-4 text-white">
@@ -28,12 +33,17 @@ export function Hero() {
           </h1>
           
           <h2 className="text-2xl md:text-3xl mb-6 text-[#38BDF8]">
-            Werkstudent Softwareentwickler & Projektmanager
+            Softwareentwickler | Projektmanager | Cloud engineer | DevOps
           </h2>
           
           <p className="text-lg md:text-xl text-[#94A3B8] mb-6 max-w-3xl mx-auto leading-relaxed">
-            Informatikstudent im 5. Semester an der RPTU Kaiserslautern mit Schwerpunkt Softwareentwicklung und Fokus auf Frontend- und UI-Entwicklung. 
-            Praktische Erfahrung in der Entwicklung moderner Webanwendungen mit JavaScript, React, HTML und CSS.
+            Ich entwickle moderne und performante Webanwendungen mit Fokus auf Benutzerfreundlichkeit und klar strukturierten Interfaces.
+
+Durch meine Erfahrung in Frontend-Technologien wie React, JavaScript und CSS sowie meine Kenntnisse in Backend-Entwicklung und Projektmanagement kann ich sowohl technische als auch organisatorische Herausforderungen effizient lösen.
+
+Ich arbeite gerne im Team, denke lösungsorientiert und lege großen Wert auf sauberen Code und strukturierte Entwicklungsprozesse.
+
+Mein Anspruch ist es, Anwendungen zu entwickeln, die nicht nur funktionieren, sondern auch ein überzeugendes Nutzererlebnis bieten.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-8 text-[#94A3B8]">
@@ -49,7 +59,25 @@ export function Hero() {
           
           <div className="flex gap-6 justify-center mb-12">
             <motion.a
-              href="https://github.com/aroldtsatio"
+  href="https://gitlab.com/a_awoubeng24"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.1, y: -5 }}
+  whileTap={{ scale: 0.95 }}
+  className="p-3 rounded-full bg-[#1E293B] hover:bg-[#38BDF8] hover:text-[#0F172A] text-[#38BDF8] backdrop-blur-sm shadow-lg hover:shadow-xl transition-all border border-[#38BDF8]/20"
+  aria-label="GitLab"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-6 h-6"
+  >
+    <path d="M22.5 9.5l-2-6a1 1 0 00-.95-.7 1 1 0 00-.9.6L16.5 9H7.5L5.35 3.4a1 1 0 00-.9-.6 1 1 0 00-.95.7l-2 6a1 1 0 00.25 1l10 10a1 1 0 001.4 0l10-10a1 1 0 00.25-1z"/>
+  </svg>
+</motion.a>
+            <motion.a
+              href="https://github.com/@a_awoubeng24"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -5 }}
@@ -60,7 +88,7 @@ export function Hero() {
               <Github size={24} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/aroldtsatio"
+              href="https://linkedin.com/in/arold-tsatio"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -5 }}

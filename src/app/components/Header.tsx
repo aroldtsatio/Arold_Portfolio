@@ -1,9 +1,11 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useTranslation } from "react-i18next";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { i18n } = useTranslation();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -12,6 +14,8 @@ export function Header() {
       setIsOpen(false);
     }
   };
+
+  
 
   const navItems = [
     { label: 'Start', id: 'hero' },
@@ -23,13 +27,44 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1E293B]/80 backdrop-blur-md border-b border-[#38BDF8]/20 shadow-lg">
       <nav className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex gap-2 ml-4">
+          <button
+            onClick={() => {
+              i18n.changeLanguage("fr");
+              localStorage.setItem("lang", "fr");
+            }}
+            className="px-3 py-1 rounded-md border border-[#38BDF8]/30 text-[#38BDF8] hover:bg-[#38BDF8] hover:text-[#0F172A] transition text-sm"
+          >
+            FR
+          </button>
+
+          <button
+            onClick={() => {
+              i18n.changeLanguage("en");
+              localStorage.setItem("lang", "en");
+            }}
+            className="px-3 py-1 rounded-md border border-[#38BDF8]/30 text-[#38BDF8] hover:bg-[#38BDF8] hover:text-[#0F172A] transition text-sm"
+          >
+            EN
+          </button>
+
+          <button
+            onClick={() => {
+              i18n.changeLanguage("de");
+              localStorage.setItem("lang", "de");
+            }}
+            className="px-3 py-1 rounded-md border border-[#38BDF8]/30 text-[#38BDF8] hover:bg-[#38BDF8] hover:text-[#0F172A] transition text-sm"
+          >
+            DE
+          </button>
+        </div>
         <div className="flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             className="text-xl font-semibold text-[#38BDF8]"
           >
-            AROLD TSATIO
+            Hallo, schön dass du da bist!
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -59,6 +94,7 @@ export function Header() {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
+
 
         {/* Mobile Navigation */}
         <AnimatePresence>

@@ -88,7 +88,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-[#0F172A]/70 mb-1">Standort</p>
-                    <p className="text-[#0F172A] font-medium">Meisenweg 8</p>
+                    {/* <p className="text-[#0F172A] font-medium">Meisenweg 8</p> */}
                     <p className="text-[#0F172A] font-medium">67663 Kaiserslautern</p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ export function Contact() {
                     <Github size={20} className="text-[#0F172A]" />
                   </a>
                   <a
-                    href="https://linkedin.com/in/aroldtsatio"
+                    href="https://linkedin.com/in/arold-tsatio"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-[#0F172A]/20 hover:bg-[#0F172A]/30 rounded-xl transition-all"

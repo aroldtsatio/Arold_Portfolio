@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ExternalLink, Github } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ImageWithFallback } from './image/ImageWithFallback';
+import { Code } from "lucide-react";
 
 interface Project {
   id: number;
@@ -9,6 +10,7 @@ interface Project {
   image: string;
   tags: string[];
   liveUrl?: string;
+  codeUrl?: string;
   githubUrl?: string;
   period: string;
 }
@@ -29,6 +31,7 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1637937459053-c788742455be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGUlMjBzY3JlZW58ZW58MXx8fHwxNzc2MTY1Mjg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
     tags: ['Python', 'Streamlit', 'JSON', 'APIs', 'UI/UX'],
     liveUrl: 'https://campuseingang-wnvzv9m9uvv99rwhwrpwyx.streamlit.app',
+    codeUrl: 'https://github.com/aroldtsatio/Campus-Eingang',
     period: 'Jan. 2026 - Feb. 2026',
   },
   {
@@ -45,6 +48,7 @@ const projects: Project[] = [
     description: 'Implementierung eines Tic-Tac-Toe-Spiels mit drei Schwierigkeitsstufen. Umsetzung des Minimax-Algorithmus für optimale Spielentscheidungen und Anwendung algorithmischer Lösungsansätze im Bereich Künstliche Intelligenz.',
     image: 'https://images.unsplash.com/photo-1646153114001-495dfb56506d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2UlMjBjb2Rpbmd8ZW58MXx8fHwxNzc2MjQyNDEyfDA&ixlib=rb-4.1.0&q=80&w=1080',
     tags: ['JavaScript', 'KI', 'Minimax-Algorithmus', 'Game Development'],
+    codeUrl: 'https://github.com/aroldtsatio/Tictactoe',
     period: 'März 2025 - Apr. 2025',
   },
 ];
@@ -119,7 +123,16 @@ export function Projects() {
                       <ExternalLink size={16} />
                       Live Demo
                     </a>
+                    
                   )}
+                  <a 
+                  href={project.codeUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#38BDF8] hover:text-[#0EA5E9] transition-colors text-sm">
+                    <Code size={18} />
+                    Code
+                  </a>
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
