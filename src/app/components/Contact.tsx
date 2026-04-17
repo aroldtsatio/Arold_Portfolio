@@ -49,7 +49,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-[#0F172A] relative">
+   <section id="contact" className="py-20 px-6 bg-[#0F172A] relative scroll-mt-28">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#38BDF8]/5 rounded-full blur-3xl"></div>
       </div>

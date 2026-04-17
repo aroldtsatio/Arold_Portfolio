@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 export function Hero() {
   const { t } = useTranslation();
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden scroll-mt-28">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#38BDF8]/10 rounded-full blur-3xl"></div>

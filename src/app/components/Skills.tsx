@@ -37,7 +37,7 @@ export function Skills() {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="py-20 px-6 bg-[#0F172A] relative">
+    <section id="skills" className="py-20 px-6 bg-[#0F172A] relative scroll-mt-28">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#38BDF8]/5 rounded-full blur-3xl"></div>
       </div>
