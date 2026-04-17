@@ -78,7 +78,7 @@ export function Contact() {
             className="md:col-span-2"
           >
             <div className="bg-gradient-to-br from-[#38BDF8] to-[#0EA5E9] rounded-2xl p-8 h-full shadow-xl">
-              <h3 className="text-2xl mb-6 text-[#0F172A] font-semibold">
+              <h3 className="text-2xl mb-6 text-white/50 font-semibold">
                 {t("contact.infoTitle")}
               </h3>
 

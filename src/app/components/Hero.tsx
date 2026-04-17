@@ -44,7 +44,7 @@ export function Hero() {
           </h2>
 
           {/* Description */}
-          <p className="text-base md:text-xl text-[#94A3B8] mb-6 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
             {t("hero.description")}
           </p>
 
@@ -52,11 +52,11 @@ export function Hero() {
           <div className="flex flex-wrap gap-4 justify-center mb-8 text-[#94A3B8]">
             <div className="flex items-center gap-2">
               <Mail size={18} className="text-[#38BDF8]" />
-              <span className="text-sm">aroldtsatio@gmail.com</span>
+              <span className="text-sm text-white">aroldtsatio@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={18} className="text-[#38BDF8]" />
-              <span className="text-sm">{t("hero.location")}</span>
+              <span className="text-sm text-white">{t("hero.location")}</span>
             </div>
           </div>
 

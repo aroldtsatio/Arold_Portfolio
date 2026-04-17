@@ -53,7 +53,7 @@ export function Skills() {
             {t("skills.title")}
           </h2>
 
-          <p className="text-[#94A3B8] text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-white/90 text-center mb-16 max-w-2xl mx-auto">
             {t("skills.description")}
           </p>
         </motion.div>
