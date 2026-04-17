@@ -24,7 +24,7 @@ const projects = [
     key: "ticTacToe",
     image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948",
     tags: ["JavaScript", "AI", "Minimax", "Game Logic"],
-    liveUrl: "",
+    liveUrl: "https://tictactoe-oxyx.vercel.app",
     codeUrl: "https://github.com/aroldtsatio/Tictactoe",
   },
 ];
