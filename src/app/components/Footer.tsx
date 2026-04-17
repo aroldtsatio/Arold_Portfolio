@@ -1,7 +1,9 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <footer className="bg-[#1E293B] border-t border-[#38BDF8]/20 text-white py-12 px-6">
@@ -9,7 +11,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-[#94A3B8] text-sm">
-              © {currentYear} Arold Awoubeng Tsatio. Alle Rechte vorbehalten.
+              © {currentYear} Arold Awoubeng Tsatio. {t("footer.rights")}
             </p>
           </div>
 

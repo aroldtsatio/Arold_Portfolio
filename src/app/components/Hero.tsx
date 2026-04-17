@@ -1,8 +1,10 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import arold from '../../assets/arold.jpeg';
+import { useTranslation } from "react-i18next";
 
 export function Hero() {
+  const { t } = useTranslation();
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden">
       {/* Decorative background elements */}
@@ -29,21 +31,15 @@ export function Hero() {
           </div>
           
           <h1 className="text-5xl md:text-7xl mb-4 text-white">
-            Arold Awoubeng Tsatio
+            {t("hero.title")}
           </h1>
           
           <h2 className="text-2xl md:text-3xl mb-6 text-[#38BDF8]">
-            Softwareentwickler | Projektmanager | Cloud engineer | DevOps
+            {t("hero.subtitle")}
           </h2>
           
           <p className="text-lg md:text-xl text-[#94A3B8] mb-6 max-w-3xl mx-auto leading-relaxed">
-            Ich entwickle moderne und performante Webanwendungen mit Fokus auf Benutzerfreundlichkeit und klar strukturierten Interfaces.
-
-Durch meine Erfahrung in Frontend-Technologien wie React, JavaScript und CSS sowie meine Kenntnisse in Backend-Entwicklung und Projektmanagement kann ich sowohl technische als auch organisatorische Herausforderungen effizient lösen.
-
-Ich arbeite gerne im Team, denke lösungsorientiert und lege großen Wert auf sauberen Code und strukturierte Entwicklungsprozesse.
-
-Mein Anspruch ist es, Anwendungen zu entwickeln, die nicht nur funktionieren, sondern auch ein überzeugendes Nutzererlebnis bieten.
+          {t("hero.description")}
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-8 text-[#94A3B8]">
@@ -77,7 +73,7 @@ Mein Anspruch ist es, Anwendungen zu entwickeln, die nicht nur funktionieren, so
   </svg>
 </motion.a>
             <motion.a
-              href="https://github.com/@a_awoubeng24"
+              href="https://github.com/aroldtsatio"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -5 }}
@@ -118,7 +114,7 @@ Mein Anspruch ist es, Anwendungen zu entwickeln, die nicht nur funktionieren, so
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-[#38BDF8] text-[#0F172A] rounded-full hover:bg-[#0EA5E9] transition-all shadow-lg shadow-[#38BDF8]/50 hover:shadow-xl hover:shadow-[#38BDF8]/70 font-medium"
           >
-            Projekte ansehen
+            {t("hero.button")}
           </motion.button>
         </motion.div>
       </div>

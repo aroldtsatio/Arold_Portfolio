@@ -5,7 +5,14 @@ import { useTranslation } from "react-i18next";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
+
+  const currentLang = i18n.language;
+
+  const changeLanguage = (lang: "fr" | "en" | "de") => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -15,59 +22,75 @@ export function Header() {
     }
   };
 
-  
-
   const navItems = [
-    { label: 'Start', id: 'hero' },
-    { label: 'Projekte', id: 'projects' },
-    { label: 'Skills', id: 'skills' },
-    { label: 'Kontakt', id: 'contact' },
+    { label: t("header.home"), id: 'hero' },
+    { label: t("header.projects"), id: 'projects' },
+    { label: t("header.skills"), id: 'skills' },
+    { label: t("header.contact"), id: 'contact' },
   ];
+
+  const langButtonClass = (lang: string) =>
+    `w-10 h-10 rounded-full border text-lg flex items-center justify-center transition ${
+      currentLang === lang
+        ? "bg-[#38BDF8] text-[#0F172A] border-[#38BDF8]"
+        : "border-[#38BDF8]/30 hover:bg-[#38BDF8]/10 text-white"
+    }`;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1E293B]/80 backdrop-blur-md border-b border-[#38BDF8]/20 shadow-lg">
-      <nav className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex gap-2 ml-4">
-          <button
-            onClick={() => {
-              i18n.changeLanguage("fr");
-              localStorage.setItem("lang", "fr");
-            }}
-            className="px-3 py-1 rounded-md border border-[#38BDF8]/30 text-[#38BDF8] hover:bg-[#38BDF8] hover:text-[#0F172A] transition text-sm"
-          >
-            FR
-          </button>
+      <nav className="max-w-7xl mx-auto px-3 md:px-6 py-4">
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="flex gap-2 -ml-1 md:-ml-2">
+                <button
+                  onClick={() => changeLanguage("fr")}
+                  className={langButtonClass("fr")}
+                  aria-label="Français"
+                  title="Français"
+                >
+                  <img
+                    src="https://flagcdn.com/w40/fr.png"
+                    alt="Français"
+                    className="w-5 h-5 rounded-full object-cover"
+                  />
+                </button>
 
-          <button
-            onClick={() => {
-              i18n.changeLanguage("en");
-              localStorage.setItem("lang", "en");
-            }}
-            className="px-3 py-1 rounded-md border border-[#38BDF8]/30 text-[#38BDF8] hover:bg-[#38BDF8] hover:text-[#0F172A] transition text-sm"
-          >
-            EN
-          </button>
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className={langButtonClass("en")}
+                  aria-label="English"
+                  title="English"
+                >
+                  <img
+                    src="https://flagcdn.com/w40/gb.png"
+                    alt="English"
+                    className="w-5 h-5 rounded-full object-cover"
+                  />
+                </button>
 
-          <button
-            onClick={() => {
-              i18n.changeLanguage("de");
-              localStorage.setItem("lang", "de");
-            }}
-            className="px-3 py-1 rounded-md border border-[#38BDF8]/30 text-[#38BDF8] hover:bg-[#38BDF8] hover:text-[#0F172A] transition text-sm"
-          >
-            DE
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="text-xl font-semibold text-[#38BDF8]"
-          >
-            Hallo, schön dass du da bist!
-          </motion.div>
+                <button
+                  onClick={() => changeLanguage("de")}
+                  className={langButtonClass("de")}
+                  aria-label="Deutsch"
+                  title="Deutsch"
+                >
+                  <img
+                    src="https://flagcdn.com/w40/de.png"
+                    alt="Deutsch"
+                    className="w-5 h-5 rounded-full object-cover"
+                  />
+                </button>
+              </div>
 
-          {/* Desktop Navigation */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="text-base md:text-xl font-semibold text-[#38BDF8] hidden sm:block"
+            >
+              {t("header.greeting")}
+            </motion.div>
+          </div>
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -85,18 +108,15 @@ export function Header() {
             ))}
           </motion.div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-[#94A3B8] hover:text-[#38BDF8]"
-            aria-label="Menu"
+            aria-label={t("header.menu")}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-
-        {/* Mobile Navigation */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
