@@ -11,7 +11,8 @@ i18n.use(initReactI18next).init({
           description:
             "Ich entwickle moderne und performante Webanwendungen mit Fokus auf Benutzerfreundlichkeit und klar strukturierten Interfaces. Durch meine Erfahrung in Frontend-Technologien wie React, JavaScript und CSS sowie meine Kenntnisse in Backend-Entwicklung und Projektmanagement kann ich sowohl technische als auch organisatorische Herausforderungen effizient lösen. Ich arbeite gerne im Team, denke lösungsorientiert und lege großen Wert auf sauberen Code und strukturierte Entwicklungsprozesse. Mein Anspruch ist es, Anwendungen zu entwickeln, die nicht nur funktionieren, sondern auch ein überzeugendes Nutzererlebnis bieten.",
           location: "Kaiserslautern, Deutschland",
-          button: "Projekte ansehen"
+          button: "Projekte ansehen",
+          downloadCv: "CV herunterladen",
         },
 
         projects: {
@@ -87,6 +88,7 @@ i18n.use(initReactI18next).init({
             footer: {
             rights: "Alle Rechte vorbehalten."
             }
+            
       }
     },
 
@@ -98,8 +100,10 @@ i18n.use(initReactI18next).init({
           description:
             "Je développe des applications web modernes et performantes en mettant l’accent sur l’expérience utilisateur et des interfaces bien structurées. Grâce à mon expérience avec React, JavaScript et CSS, ainsi qu’à mes connaissances en backend et en gestion de projet, je peux résoudre efficacement des défis techniques et organisationnels. J’aime travailler en équipe, j’ai une approche orientée solutions et j’accorde une grande importance à un code propre et à des processus de développement structurés. Mon objectif est de créer des applications qui ne se contentent pas de fonctionner, mais qui offrent aussi une expérience utilisateur convaincante.",
           location: "Kaiserslautern, Allemagne",
-          button: "Voir les projets"
+          button: "Voir les projets",
+        downloadCv: "Télécharger le CV"
         },
+
 
         projects: {
           sectionTitle: "Projets",
@@ -184,7 +188,8 @@ i18n.use(initReactI18next).init({
           description:
             "I build modern and high-performance web applications with a strong focus on usability and well-structured interfaces. With experience in React, JavaScript, and CSS, as well as knowledge of backend development and project management, I can solve both technical and organizational challenges efficiently. I enjoy teamwork, have a solution-oriented mindset, and place strong value on clean code and structured development processes. My goal is to create applications that not only work well, but also provide a compelling user experience.",
           location: "Kaiserslautern, Germany",
-          button: "View Projects"
+          button: "View Projects",
+          downloadCv: "Download CV"
         },
 
         projects: {

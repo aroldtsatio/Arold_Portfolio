@@ -116,8 +116,19 @@ export function Hero() {
           >
             {t("hero.button")}
           </motion.button>
+
+           <motion.a
+              href="/public/C_V_AROLD_Awoubeng Tsatio.pdf"
+              download
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 border border-[#38BDF8] text-[#38BDF8] rounded-full hover:bg-[#38BDF8] hover:text-[#0F172A] transition-all shadow-lg font-medium inline-flex items-center justify-center"
+            >
+              {t("hero.downloadCv")}
+          </motion.a>
         </motion.div>
       </div>
+      
     </section>
   );
 }
