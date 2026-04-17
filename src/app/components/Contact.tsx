@@ -12,10 +12,33 @@ export function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert(t("contact.form.success"));
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mnjlpwby", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert(t("contact.form.success"));
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert(t("contact.form.error"));
+      }
+    } catch (error) {
+      alert(t("contact.form.error"));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -189,12 +212,13 @@ export function Contact() {
 
                 <motion.button
                   type="submit"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full px-6 py-3 bg-[#38BDF8] text-[#0F172A] rounded-xl hover:bg-[#0EA5E9] transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#38BDF8]/50 font-medium"
+                  disabled={isSubmitting}
+                  whileHover={{ scale: isSubmitting ? 1 : 1.02, y: isSubmitting ? 0 : -2 }}
+                  whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+                  className="w-full px-6 py-3 bg-[#38BDF8] text-[#0F172A] rounded-xl hover:bg-[#0EA5E9] transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#38BDF8]/50 font-medium disabled:opacity-70"
                 >
                   <Send size={18} />
-                  {t("contact.form.submit")}
+                  {isSubmitting ? t("contact.form.sending") : t("contact.form.submit")}
                 </motion.button>
               </div>
             </form>
