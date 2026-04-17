@@ -9,7 +9,7 @@ i18n.use(initReactI18next).init({
           title: "Arold Awoubeng Tsatio",
           subtitle: "Softwareentwickler | Projektmanager | Cloud Engineer | DevOps",
           description:
-            "Ich entwickle moderne und performante Webanwendungen mit Fokus auf Benutzerfreundlichkeit und klar strukturierten Interfaces. Durch meine Erfahrung in Frontend-Technologien wie React, JavaScript und CSS sowie meine Kenntnisse in Backend-Entwicklung und Projektmanagement kann ich sowohl technische als auch organisatorische Herausforderungen effizient lösen. Ich arbeite gerne im Team, denke lösungsorientiert und lege großen Wert auf sauberen Code und strukturierte Entwicklungsprozesse. Mein Anspruch ist es, Anwendungen zu entwickeln, die nicht nur funktionieren, sondern auch ein überzeugendes Nutzererlebnis bieten.",
+            "Ich programmiere nicht nur, ich erschaffe Erlebnisse. Ich entwickle moderne und leistungsstarke Webanwendungen mit einem klaren Fokus auf den Nutzer. Mit Technologien wie React, JavaScript und CSS gestalte ich strukturierte, dynamische und benutzerfreundliche Interfaces. Durch die Kombination aus Backend-Entwicklung und Projektmanagement bin ich in der Lage, sowohl technische als auch organisatorische Herausforderungen effizient zu bewältigen. Qualität, sauberer Code und bewährte Methoden stehen für mich an erster Stelle. Teamarbeit und Engagement sind für mich selbstverständlich. Mein Ziel ist es, zuverlässige, skalierbare und wirklich ansprechende Anwendungen zu entwickeln. Denn eine erfolgreiche Anwendung ist vor allem eines: eine Erfahrung, die im Gedächtnis bleibt.",
           location: "Kaiserslautern, Deutschland",
           button: "Projekte ansehen",
           downloadCv: "CV herunterladen",
@@ -98,7 +98,7 @@ i18n.use(initReactI18next).init({
           title: "Arold Awoubeng Tsatio",
           subtitle: "Développeur logiciel | Chef de projet | Cloud Engineer | DevOps",
           description:
-            "Je développe des applications web modernes et performantes en mettant l’accent sur l’expérience utilisateur et des interfaces bien structurées. Grâce à mon expérience avec React, JavaScript et CSS, ainsi qu’à mes connaissances en backend et en gestion de projet, je peux résoudre efficacement des défis techniques et organisationnels. J’aime travailler en équipe, j’ai une approche orientée solutions et j’accorde une grande importance à un code propre et à des processus de développement structurés. Mon objectif est de créer des applications qui ne se contentent pas de fonctionner, mais qui offrent aussi une expérience utilisateur convaincante.",
+            "Je ne me contente pas de coder, je construis des expériences. Je conçois des applications web modernes et performantes, centrées sur l’utilisateur. Grâce à React, JavaScript et CSS, je développe des interfaces claires, dynamiques et bien structurées. En combinant développement backend et gestion de projet, je relève efficacement des défis techniques et organisationnels. J’accorde une grande importance à la qualité du code, aux bonnes pratiques et à la collaboration. Collaboratif et engagé, mon objectif est de créer des applications fiables, évolutives et réellement engageantes. Car une application réussie, c’est avant tout une expérience qui marque.",
           location: "Kaiserslautern, Allemagne",
           button: "Voir les projets",
         downloadCv: "Télécharger le CV"
@@ -186,7 +186,7 @@ i18n.use(initReactI18next).init({
           title: "Arold Awoubeng Tsatio",
           subtitle: "Software Developer | Project Manager | Cloud Engineer | DevOps",
           description:
-            "I build modern and high-performance web applications with a strong focus on usability and well-structured interfaces. With experience in React, JavaScript, and CSS, as well as knowledge of backend development and project management, I can solve both technical and organizational challenges efficiently. I enjoy teamwork, have a solution-oriented mindset, and place strong value on clean code and structured development processes. My goal is to create applications that not only work well, but also provide a compelling user experience.",
+            "I don’t just code I build experiences. I design modern and high-performance web applications with a strong focus on the user. Using technologies like React, JavaScript, and CSS, I create clean, dynamic, and well-structured interfaces. By combining backend development with project management, I effectively tackle both technical and organizational challenges. I place great importance on code quality, best practices, and collaboration. Collaborative and driven, my goal is to build reliable, scalable, and truly engaging applications. Because a successful application is more than just functionality — it’s an experience that leaves a lasting impression.",
           location: "Kaiserslautern, Germany",
           button: "View Projects",
           downloadCv: "Download CV"
