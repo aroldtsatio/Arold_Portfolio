@@ -15,12 +15,20 @@ export function Header() {
   };
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
-    }
-  };
+  const element = document.getElementById(id);
+  if (element) {
+    const headerOffset = 100; // espace pour le header fixe
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+
+    setIsOpen(false);
+  }
+};
 
   const navItems = [
     { label: t("header.home"), id: 'hero' },
