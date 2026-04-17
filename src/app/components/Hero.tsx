@@ -125,7 +125,7 @@ export function Hero() {
 
             {/* CV */}
             <motion.a
-              href="/public/C_V_AROLD_Awoubeng Tsatio.pdf"
+              href="/Arold_Awoubeng_Tsatio_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
