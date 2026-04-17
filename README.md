@@ -79,3 +79,6 @@ npm install
 ```bash 
   npm run dev
   ```
+
+  ## Autor
+  Arold Awoubeng Tsatio
