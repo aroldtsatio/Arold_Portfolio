@@ -14,12 +14,13 @@ export function Header() {
     localStorage.setItem("lang", lang);
   };
 
-  const navItems = [
-    { label: t("header.home"), id: 'hero' },
-    { label: t("header.projects"), id: 'projects' },
-    { label: t("header.skills"), id: 'skills' },
-    { label: t("header.contact"), id: 'contact' },
-  ];
+ const navItems = [
+  { label: t("header.home"), id: 'hero' },
+  { label: t("header.projects"), id: 'projects' },
+  { label: t("header.skills"), id: 'skills' },
+  { label: t("header.certificates"), id: 'certificates' },
+  { label: t("header.contact"), id: 'contact' },
+];
 
   const langButtonClass = (lang: string) =>
     `w-10 h-10 rounded-full border flex items-center justify-center transition ${

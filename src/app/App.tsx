@@ -4,6 +4,7 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Certificates } from "./components/Certificates";
 
 export default function App() {
   return (
@@ -13,9 +14,12 @@ export default function App() {
         <Hero />
         <Projects />
         <Skills />
+        <Certificates />
         <Contact />
+        
       </main>
       <Footer />
+      
     </div>
   );
 }

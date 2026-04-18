@@ -81,14 +81,22 @@ i18n.use(initReactI18next).init({
             home: "Start",
             projects: "Projekte",
             skills: "Skills",
+            certificates: "Zertifikate",
             contact: "Kontakt",
             menu: "Menü"
             },
 
             footer: {
             rights: "Alle Rechte vorbehalten."
-            }
-            
+         },
+        certificates: {
+            title: "Zertifikate",
+            description: "Meine abgeschlossenen Zertifizierungen und erworbenen Badges",
+            view: "Zertifikat ansehen",
+            open: "Original öffnen",
+            back: "Zurück",
+            certificatePreview: "Zertifikatsvorschau"
+          }
       }
     },
 
@@ -170,13 +178,22 @@ i18n.use(initReactI18next).init({
                 home: "Accueil",
                 projects: "Projets",
                 skills: "Skills",
+                certificates: "Certificats",
                 contact: "Contact",
                 menu: "Menu"
                 },
 
                 footer: {
                 rights: "Tous droits réservés."
-                }
+                },
+                certificates: {
+                title: "Certificats",
+                description: "Mes certifications obtenues et badges",
+                view: "Voir le certificat",
+                open: "Ouvrir l’original",
+                back: "Retour",
+                certificatePreview: "Aperçu du certificat"
+              }
       }
     },
 
@@ -258,13 +275,22 @@ i18n.use(initReactI18next).init({
                 home: "Home",
                 projects: "Projects",
                 skills: "Skills",
+                certificates: "Certificates",
                 contact: "Contact",
                 menu: "Menu"
                 },
 
                 footer: {
                 rights: "All rights reserved."
-                }
+                },
+                certificates: {
+                  title: "Certificates",
+                  description: "My completed certifications and earned badges",
+                  view: "View certificate",
+                  open: "Open original",
+                  back: "Back",
+                  certificatePreview: "Certificate preview"
+                }  
       }
     }
   },
