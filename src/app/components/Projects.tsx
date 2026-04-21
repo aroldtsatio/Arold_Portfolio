@@ -35,7 +35,7 @@ const projects = [
       "Moderne und responsive Webanwendung zur Präsentation von Automatisierungslösungen. Entwicklung einer benutzerfreundlichen Oberfläche mit Kontaktformular und performanter Frontend-Architektur.",
     image: "/projects/ngola-flow.png",
     tags: ["React", "Vite", "Tailwind CSS", "Formspree"],
-    liveUrl: "https://ngola-flow-web-site.vercel.app",
+    liveUrl: "https://ngola-flow-web-site-wlnw.vercel.app",
     codeUrl: "",
     period: "Dez. 2025 - Jan. 2026",
   },
