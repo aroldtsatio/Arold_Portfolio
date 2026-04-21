@@ -5,6 +5,7 @@ import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Certificates } from "./components/Certificates";
+import ChatWidget from "./components/ChatWidget";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Contact />
         
       </main>
+      <ChatWidget />
       <Footer />
       
     </div>
