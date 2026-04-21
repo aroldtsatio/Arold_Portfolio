@@ -13,7 +13,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     key: 'backend',
-    skills: ['Java', 'Spring Boot', 'REST APIs', 'Node.js', 'SQL', 'JUnit', 'Docker'],
+    skills: ['Java', 'Spring Boot', 'REST APIs', 'Node.js', 'SQL', 'JUnit', 'Docker', 'Express.js', 'Client-server architecture', 'Environment variables management (.env)'],
   },
   {
     key: 'pm',
@@ -28,8 +28,16 @@ const skillCategories: SkillCategory[] = [
     skills: ['Responsive Design', 'Benutzerfreundlichkeit', 'Intuitive Interfaces', 'Prototyping'],
   },
   {
+    key: 'ai',
+    skills: ['OpenAI API', 'AI chatbot development (fullstack)', 'Prompt engineering basics', 'API-based AI applications', 'HTTP/HTTPS/SSL (Let\'s Encrypt, Certbot)', 'SSH (Secure Access)', 'CI/CD (github Actions)'],
+  },
+  {
+    key: 'Cloud',
+    skills: ['AWS EC2', 'Linux (Ubuntu)', 'Nginx', 'DNS & Domain Configuration', 'HTTP/HTTPS/SSL (Let\'s Encrypt, Certbot)', 'SSH (Secure Access)', 'CI/CD (github Actions)'],
+  },
+  {
     key: 'other',
-    skills: ['Python', 'PHP', 'TDD', 'Code Reviews', 'Datenverarbeitung', 'Cloud Computing'],
+    skills: ['Python', 'PHP', 'TDD', 'Code Reviews', 'Datenverarbeitung'],
   },
 ];
 

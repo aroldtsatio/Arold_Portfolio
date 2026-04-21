@@ -60,7 +60,7 @@ const projects = [
     image: "/projects/ai-chatbot.png",
     tags: ["React", "Node.js", "Express", "OpenAI API"],
     liveUrl: "",
-    codeUrl: "",
+    codeUrl: "https://github.com/aroldtsatio/ai-chatbox-portfolio",
     period: "Apr. 2026",
   },
   {

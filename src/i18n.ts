@@ -74,7 +74,9 @@ i18n.use(initReactI18next).init({
             pm: "Projektmanagement",
             tools: "Tools & Versionskontrolle",
             uiux: "UI/UX & Design",
-            other: "Weitere Kenntnisse"
+            other: "Weitere Kenntnisse",
+            Cloud: "Cloud / DevOps",
+            ai: "AI & APIs"
           }
         },
         contact: {
@@ -198,7 +200,9 @@ i18n.use(initReactI18next).init({
             pm: "Gestion de projet",
             tools: "Outils & contrôle de version",
             uiux: "UI/UX & Design",
-            other: "Autres compétences"
+            other: "Autres compétences",
+            Cloud: "Cloud / DevOps",
+            ai: "AI & APIs"
           }
         },
         contact: {
@@ -320,7 +324,9 @@ i18n.use(initReactI18next).init({
             pm: "Project Management",
             tools: "Tools & Version Control",
             uiux: "UI/UX & Design",
-            other: "Other Skills"
+            other: "Other Skills",
+            Cloud: "Cloud / DevOps",
+            ai: "AI & APIs"
           }
         },
 
