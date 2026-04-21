@@ -27,6 +27,54 @@ const projects = [
     liveUrl: "https://tictactoe-oxyx.vercel.app",
     codeUrl: "https://github.com/aroldtsatio/Tictactoe",
   },
+   {
+    id: 4,
+    key: "ngolaFlow",
+    title: "Ngola-Flow Webanwendung",
+    description:
+      "Moderne und responsive Webanwendung zur Präsentation von Automatisierungslösungen. Entwicklung einer benutzerfreundlichen Oberfläche mit Kontaktformular und performanter Frontend-Architektur.",
+    image: "/projects/ngola-flow.png",
+    tags: ["React", "Vite", "Tailwind CSS", "Formspree"],
+    liveUrl: "https://ngola-flow-web-site.vercel.app",
+    codeUrl: "",
+    period: "Dez. 2025 - Jan. 2026",
+  },
+  {
+    id: 5,
+    key: "portfolio",
+    title: "Persönliches Portfolio",
+    description:
+      "Entwicklung eines modernen, responsiven Portfolios zur Präsentation von Projekten und Kompetenzen. Implementierung von Mehrsprachigkeit, Kontaktformular und Deployment mit Vercel.",
+    image: "/projects/portfolio.png",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "i18next"],
+    liveUrl: "https://portfolio.aroldtsatio.com/",
+    codeUrl: "",
+    period: "Mär. 2026 - Apr. 2026",
+  },
+  {
+    id: 6,
+    key: "aiChatbot",
+    title: "AI Portfolio Chatbot",
+    description:
+      "Fullstack-Projekt zur Entwicklung eines KI-Chatbots für eine Portfolio-Webseite. Umsetzung eines Node.js/Express-Backends und Integration der OpenAI API für intelligente Antworten.",
+    image: "/projects/ai-chatbot.png",
+    tags: ["React", "Node.js", "Express", "OpenAI API"],
+    liveUrl: "",
+    codeUrl: "",
+    period: "Apr. 2026",
+  },
+  {
+    id: 7,
+    key: "zoffImZoo",
+    title: "Softwareentwicklungsprojekt – Zoff_im_Zoo",
+    description:
+      "Agiles Multiplayer-Spielprojekt mit Scrum, Client-Server-Architektur und Test-Driven Development. Entwicklung einer netzwerkfähigen Anwendung inklusive technischer Dokumentation und Git-Repository-Struktur.",
+    image: "/projects/zoff-im-zoo.png",
+    tags: ["Java", "Scrum", "Client-Server", "TDD", "GitLab", "Maven"],
+    liveUrl: "",
+    codeUrl: "",
+    period: "Sept. 2025 - Mär. 2026",
+  },
 ];
 
 export function Projects() {

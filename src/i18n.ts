@@ -38,7 +38,30 @@ i18n.use(initReactI18next).init({
               description:
                 "Eigenprojekt mit Implementierung der Spiellogik, mehreren Schwierigkeitsstufen und dem Minimax-Algorithmus für optimale Spielentscheidungen.",
               period: "März 2025 - Apr. 2025"
-            }
+            },
+             
+                  ngolaFlow: {
+                    title: "Ngola-Flow Webanwendung",
+                    description: "Moderne und responsive Webanwendung zur Präsentation von Automatisierungslösungen. Entwicklung einer benutzerfreundlichen Oberfläche mit Kontaktformular und performanter Frontend-Architektur.",
+                    period: "Dez. 2025 - Jan. 2026"
+                  },
+                  portfolio: {
+                    title: "Persönliches Portfolio",
+                    description: "Entwicklung eines modernen, responsiven Portfolios zur Präsentation von Projekten und Kompetenzen. Implementierung von Mehrsprachigkeit, Kontaktformular und Deployment mit Vercel.",
+                    period: "Mär. 2026 - Apr. 2026"
+                  },
+                  aiChatbot: {
+                    title: "AI Portfolio Chatbot",
+                    description: "Fullstack-Projekt zur Entwicklung eines KI-Chatbots für eine Portfolio-Webseite. Umsetzung eines Node.js/Express-Backends und Integration der OpenAI API für intelligente Antworten.",
+                    period: "Apr. 2026"
+                  },
+                  zoffImZoo: {
+                    title: "Softwareentwicklungsprojekt – Zoff_im_Zoo",
+                    description: "Agiles Multiplayer-Spielprojekt mit Scrum, Client-Server-Architektur und Test-Driven Development. Entwicklung einer netzwerkfähigen Anwendung inklusive technischer Dokumentation und Git-Repository-Struktur.",
+                    period: "Sept. 2025 - Mär. 2026"
+                  }
+                
+
           }
         },
 
@@ -136,7 +159,33 @@ i18n.use(initReactI18next).init({
               description:
                 "Projet personnel avec implémentation de la logique du jeu, de plusieurs niveaux de difficulté et de l’algorithme Minimax pour des décisions optimales.",
               period: "Mars 2025 - Avr. 2025"
-            }
+            },
+            
+                  ngolaFlow: {
+                    title: "Application Web Ngola-Flow",
+                    description:
+                      "Application web moderne et responsive conçue pour présenter des solutions d’automatisation. Développement d’une interface utilisateur intuitive avec formulaire de contact et architecture frontend performante.",
+                    period: "Déc. 2025 - Janv. 2026"
+                  },
+                  portfolio: {
+                    title: "Portfolio Personnel",
+                    description:
+                      "Développement d’un portfolio moderne et responsive pour présenter mes projets et compétences. Implémentation du multilingue, d’un formulaire de contact et déploiement avec Vercel.",
+                    period: "Mars 2026 - Avril 2026"
+                  },
+                  aiChatbot: {
+                    title: "Chatbot IA pour Portfolio",
+                    description:
+                      "Projet fullstack visant à développer un chatbot intelligent pour un site portfolio. Mise en place d’un backend Node.js/Express et intégration de l’API OpenAI pour des réponses intelligentes.",
+                    period: "Avril 2026"
+                  },
+                  zoffImZoo: {
+                    title: "Projet de Développement Logiciel – Zoff_im_Zoo",
+                    description:
+                      "Projet de jeu multijoueur développé en méthode Agile (Scrum) avec architecture client-serveur et Test-Driven Development. Réalisation d’une application réseau avec documentation technique complète et gestion via Git.",
+                    period: "Sept. 2025 - Mars 2026"
+                  }
+                
           }
         },
 
@@ -232,7 +281,33 @@ i18n.use(initReactI18next).init({
               description:
                 "Personal project implementing game logic, multiple difficulty levels, and the Minimax algorithm for optimal decisions.",
               period: "Mar. 2025 - Apr. 2025"
-            }
+            },
+             
+                  ngolaFlow: {
+                    title: "Ngola-Flow Web Application",
+                    description:
+                      "Modern and responsive web application designed to showcase automation solutions. Development of a user-friendly interface with a contact form and a performant frontend architecture.",
+                    period: "Dec. 2025 - Jan. 2026"
+                  },
+                  portfolio: {
+                    title: "Personal Portfolio",
+                    description:
+                      "Development of a modern, responsive portfolio to showcase projects and skills. Implementation of multilingual support, a contact form, and deployment with Vercel.",
+                    period: "Mar. 2026 - Apr. 2026"
+                  },
+                  aiChatbot: {
+                    title: "AI Portfolio Chatbot",
+                    description:
+                      "Fullstack project focused on building an AI chatbot for a portfolio website. Implementation of a Node.js/Express backend and integration of the OpenAI API for intelligent responses.",
+                    period: "Apr. 2026"
+                  },
+                  zoffImZoo: {
+                    title: "Software Engineering Project – Zoff_im_Zoo",
+                    description:
+                      "Agile multiplayer game project using Scrum, client-server architecture, and test-driven development. Development of a network-enabled application including technical documentation and Git repository structure.",
+                    period: "Sept. 2025 - Mar. 2026"
+                  }
+                
           }
         },
 
