@@ -9,7 +9,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
     tags: ["React Native", "Spring Boot", "REST API", "GitLab"],
     liveUrl: "",
-    codeUrl: "https://github.com/aroldtsatio/smart-mensa",
+    codeUrl: "",
   },
   {
     id: 2,

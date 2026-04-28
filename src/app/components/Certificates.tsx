@@ -5,6 +5,9 @@ import { useState } from "react";
 import linuxFoundationLogo from "../../assets/certificates/linux-foundation-logo.png";
 import linuxBadge from "../../assets/certificates/linux-badge.png";
 import linuxCertificatePreview from "../../assets/certificates/linux-certificate-preview.png";
+import agileLogo from "../../assets/certificates/agile-logo.png";
+import agileBadge from "../../assets/certificates/agile-badge.png";
+import agilePreview from "../../assets/certificates/agile-preview.png";
 
 interface Certificate {
   title: string;
@@ -25,6 +28,15 @@ const certificates: Certificate[] = [
     logo: linuxFoundationLogo,
     badge: linuxBadge,
     preview: linuxCertificatePreview,
+  },
+    {
+    title: "Agiles Projektmanagement",
+    issuer: "LinkedIn Learning",
+    date: "April 2026",
+    link: "#", 
+    logo: agileLogo, 
+    badge: agileBadge,
+    preview: agilePreview,
   },
 ];
 

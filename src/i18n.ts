@@ -121,7 +121,8 @@ i18n.use(initReactI18next).init({
             open: "Original öffnen",
             back: "Zurück",
             certificatePreview: "Zertifikatsvorschau"
-          }
+          }, 
+          
       }
     },
 
